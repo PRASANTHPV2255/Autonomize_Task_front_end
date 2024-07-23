@@ -1,0 +1,33 @@
+
+.text_area{
+  display: flex;
+  flex: content;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-self: center;
+  height: 70vh;
+}
+.text_area_headings{
+  padding-bottom: 20px;
+}
+.text_area_headings p{
+  padding-left: 12px;
+}
+
+.search-bar {
+  display: flex;
+}
+
+.search-bar input {
+  width: 25vw;
+  color: blue;
+  background-color: aliceblue;
+  border: none;
+  padding-left: 20px;
+  border-radius: 5px;
+}
+.search-bar button{
+  cursor: pointer;
+}
+
