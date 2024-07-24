@@ -23,21 +23,18 @@ function TextArea() {
 
   };
 
-
-
-
   return (
     <div className='text_area'>
       <div className='search_area'>
         <div className='text_area_headings'>
           <h2>GitHub Explorer</h2>
-          <p>Search username here</p>
+          
         </div>
         <div className="search-bar">
           <input
             type="text"
             value={username}
-            placeholder='Search'
+            placeholder='Search user name'
             color='black'
             onChange={(e) => setUsername(e.target.value)}
           />
@@ -49,8 +46,6 @@ function TextArea() {
           </NewContext.Provider> : null
           }
         </div>
-
-
       </div>
     </div>
   )

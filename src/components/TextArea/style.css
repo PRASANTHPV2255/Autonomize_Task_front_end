@@ -8,12 +8,11 @@
   align-self: center;
   height: 70vh;
   margin-bottom: 30px;
+  padding-top: 25px;
 }
 .text_area_headings{
   padding-bottom: 20px;
-}
-.text_area_headings p{
-  padding-left: 12px;
+  padding-left: 15px;
 }
 
 .search-bar {
@@ -32,3 +31,9 @@
   cursor: pointer;
 }
 
+.repositries h3{
+  padding-left:15px;
+  padding-bottom:5px;
+  padding-top: 5px;
+  margin-top: 10px;
+}

@@ -12,8 +12,8 @@ function Repos() {
   )
 
   return (
-    <div>
-      <h3>repositories</h3>
+    <div className='repositries'>
+      <h3 >repositories</h3>
       <div className="repositories-list">
         {
           repos.map((e) => (
