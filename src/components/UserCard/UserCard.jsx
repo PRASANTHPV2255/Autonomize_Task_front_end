@@ -1,13 +1,15 @@
-import { useContext, useState } from "react"
+import { createContext, useContext, useState } from "react"
 import { NewContext } from "../TextArea"
 import './UserCard.css'
 import axios from "axios";
-import Repos from "../../Screens/Reops/Repos";
+import Repos from "../../Screens/Repos/Repos";
 
+
+export const contextRepos = createContext()
 function UserCard() {
   const userData = useContext(NewContext)
 
-  const [repoData, setRepoData] = useState([])
+  const [repoData, setRepoData] = useState(null)
   const [error, setError] = useState(null);
 
   const handleFetch = async () => {
@@ -17,13 +19,15 @@ function UserCard() {
       setError(null);
     } catch (err) {
       setError(err.message);
+      //setRepoData(null); // Reset repoData in case of error
     }
+
 
   };
   console.log(repoData);
 
   return (
-    <div>
+    <div className="User_and_repositaries">
       <div className="user-info-card">
         <div className="user-info-card__image-container">
           <img
@@ -44,7 +48,11 @@ function UserCard() {
           </header>
         </div>
       </div>
-        {/* <Repos repos={{ ...repoData }} /> */}
+      <div className="repositaries">
+        {repoData ? <contextRepos.Provider value={repoData}>
+          <Repos />
+        </contextRepos.Provider> : null}
+      </div>
     </div>
   )
 }

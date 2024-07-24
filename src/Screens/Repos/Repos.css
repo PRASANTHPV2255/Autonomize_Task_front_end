@@ -4,12 +4,13 @@
   gap: 20px;
   width: 350px;
   max-width: 45vw;
-  border-radius: var(--border-radius);
   padding: 10px;
+  border: 1px solid white;
+  border-radius:5px;
+
 }
 
 .card:hover {
-  background-color: rgb(235, 235, 235);
   cursor: pointer;
 }
 
@@ -19,10 +20,15 @@
   border-radius: 50%;
 }
 
-.card__content {
-}
 
 .card__name {
-  color: darkblue;
+  color: rgb(230, 230, 236);
   word-break: break-all;
+}
+
+
+.repositories-list {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
 }
