@@ -9,13 +9,12 @@ function TextArea() {
  
   const [username, setUsername] = useState('');
   const [userData, setUserData] = useState(null);
-  const [error, setError] = useState(null);
 
   const handleFetch = async () => {
     try {
       const { data } = await axios.get(`https://api.github.com/users/${username}`);
       setUserData(data);
-      setError(null);
+     
     } catch (err) {
       if(userData === null){
         alert('user name is incorrect')

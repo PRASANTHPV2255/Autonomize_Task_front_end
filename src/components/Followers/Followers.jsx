@@ -26,21 +26,7 @@ function Followers() {
       }
     };
     FetchFollwersApi()
-    console.log(Name);
-    console.log(followersCount);
   }, [])
-
-  console.log(followersList);
-
-  // if(followersList){
-  //   followersList.map((e)=>
-  //     {
-
-  //       console.log(e?.login)
-  //       console.log(e?.avatar_url);
-
-  // })
-  // }
 
 
   return (

@@ -12,19 +12,17 @@ function UserCard() {
   const userData = useContext(NewContext)
 
   const [repoData, setRepoData] = useState(null)
-  const [error, setError] = useState(null);
 
   const handleFetch = async () => {
     try {
       const { data } = await axios.get(userData.repos_url);
       setRepoData(data);
-      setError(null);
+     
     } catch (err) {
-      setError(err.message);
+      console.log(err);
     }
   };
-  console.log(userData);
-
+ 
   function followerList() {
     navigate('/followers', { state: { apiData: userData.followers_url,userName:userData.login,followerCount:userData.followers
        }});

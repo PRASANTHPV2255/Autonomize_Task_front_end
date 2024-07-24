@@ -5,8 +5,6 @@ import { contextRepos } from '../../components/UserCard/UserCard'
 function Repos() {
   const repos = useContext(contextRepos)
 
-  console.log('this is repo page', repos)
-
   return (
     <div className='repositries'>
       <h3 >repositories</h3>
