@@ -42,6 +42,10 @@ function TextArea() {
     if (name){
       setUsername(name);
       fetchData();
+    } else{
+      setUserData(null)
+      setUsername('')
+      setRepoData(null)
     }
 
   }, [name]);
