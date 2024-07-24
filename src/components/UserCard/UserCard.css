@@ -1,0 +1,42 @@
+
+.user-info-card{
+  height: 100px;
+ 
+  /* background-color: red; */
+  display: flex;
+  /* justify-content: space-evenly; */
+  margin-top: 20px;
+  border: 1px solid white;
+  padding-top: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  border-radius: 5px;
+}
+.user-info-card__image-container{
+  height: 75px;
+  width: 75px;
+  border-radius: 50%;
+}
+.user-info-card__image{
+  width: 75px;
+  height: 75px;
+  border-radius: 50%;
+}
+.user-info-card__name{
+  padding-right: 20px;
+  padding-bottom: 5px;
+}
+.user-info-card__content{
+  padding-top: 10px;
+  padding-left: 20px;
+  width: 100%;
+}
+.user-info-card__content header{
+  display: flex;
+  justify-content: space-between;
+}
+.user-info-card__content button{
+  background-color: white;
+  color: black;
+  max-height: 45px;
+}

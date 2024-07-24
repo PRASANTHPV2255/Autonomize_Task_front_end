@@ -2,9 +2,13 @@ import React from 'react'
 import ReactDOM from 'react-dom/client'
 import App from './App.jsx'
 import './index.css'
+import ErrorBoundary from './utils/ErrorBoundry.jsx'
+import ErrorPage from './Screens/ErrorPage/ErrorPage.jsx'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
+ <>
+     <ErrorBoundary fallback={<ErrorPage />}>
+      <App />
+    </ErrorBoundary>
+  </>
 )
