@@ -4,9 +4,11 @@ import TextArea from '../../components/TextArea'
 
 function Screen() {
   return (
-    <div style={{display:'flex',flexDirection:'column'}}>
-      <Header/>   
-      <TextArea/>
+    <div style={{ display: 'flex', flexDirection: 'column' }}>
+
+        <Header />
+        <TextArea />
+    
     </div>
   )
 }

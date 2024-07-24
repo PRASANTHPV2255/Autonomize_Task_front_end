@@ -7,10 +7,6 @@ function Repos() {
 
   console.log('this is repo page', repos)
 
-  repos.map((e) =>
-    console.log(e.name)
-  )
-
   return (
     <div className='repositries'>
       <h3 >repositories</h3>

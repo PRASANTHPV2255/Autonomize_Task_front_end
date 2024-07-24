@@ -1,0 +1,47 @@
+.card {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  width: 350px;
+  max-width: 45vw;
+  padding: 10px;
+  border: 1px solid white;
+  border-radius:5px;
+
+}
+
+.card:hover {
+  cursor: pointer;
+}
+
+.card__image {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+
+.card__name {
+  color: rgb(230, 230, 236);
+  word-break: break-all;
+}
+
+
+.repositories-list {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  margin-top: 10px;
+  row-gap: 10px;
+  column-gap: 15px;
+}
+.heading{
+  padding-left: 50px;
+  padding-top: 20px;
+  padding-bottom: 15px;
+}
+.heading p{
+  padding-top: 10px;
+}
+.friends_List{
+  padding-left: 40px;
+}

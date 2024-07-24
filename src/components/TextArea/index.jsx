@@ -17,11 +17,16 @@ function TextArea() {
       setUserData(data);
       setError(null);
     } catch (err) {
-      setError(err.message);
-      setUserData(null);
-    }
-
+      if(userData === null){
+        alert('user name is incorrect')
+      } else {
+        alert(err.message)
+      }
+    } 
+    
   };
+
+  
 
   return (
     <div className='text_area'>

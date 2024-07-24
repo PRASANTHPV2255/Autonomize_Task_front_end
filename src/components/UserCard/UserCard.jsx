@@ -3,10 +3,12 @@ import { NewContext } from "../TextArea"
 import './UserCard.css'
 import axios from "axios";
 import Repos from "../../Screens/Repos/Repos";
+import { useNavigate } from "react-router-dom";
 
 
 export const contextRepos = createContext()
 function UserCard() {
+  const navigate = useNavigate()
   const userData = useContext(NewContext)
 
   const [repoData, setRepoData] = useState(null)
@@ -19,12 +21,14 @@ function UserCard() {
       setError(null);
     } catch (err) {
       setError(err.message);
-      //setRepoData(null); // Reset repoData in case of error
     }
-
-
   };
-  console.log(repoData);
+  console.log(userData);
+
+  function followerList() {
+    navigate('/followers', { state: { apiData: userData.followers_url,userName:userData.login,followerCount:userData.followers
+       }});
+  }
 
   return (
     <div className="User_and_repositaries">
@@ -44,7 +48,11 @@ function UserCard() {
               <p>LocationL:{userData.location}</p>
               <a href="#" onClick={handleFetch}>repositories</a>
             </div>
-            <button>Followers</button>
+            <button onClick={() =>
+              followerList()
+            }>
+              Followers
+            </button>
           </header>
         </div>
       </div>
