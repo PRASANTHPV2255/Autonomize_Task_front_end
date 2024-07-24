@@ -1,4 +1,4 @@
-.card {
+.card_repos {
   display: flex;
   align-items: center;
   gap: 20px;
@@ -10,18 +10,18 @@
 
 }
 
-.card:hover {
+.card_repos:hover {
   cursor: pointer;
 }
 
-.card__image {
+.card__repo_image {
   width: 50px;
   height: 50px;
   border-radius: 50%;
 }
 
 
-.card__name {
+.card__repo_name {
   color: rgb(230, 230, 236);
   word-break: break-all;
 }

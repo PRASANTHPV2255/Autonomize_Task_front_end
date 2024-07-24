@@ -1,50 +1,4 @@
-/* 
-.user-info-card{
-  display: flex;
-  margin-top: 20px;
-  border: 1px solid white;
-  padding-top: 10px;
-  padding-left: 10px;
-  padding-right: 10px;
-  border-radius: 5px;
-  padding-bottom: 15px;
-}
-.user-info-card__image-container{
-  height: 75px;
-  width: 75px;
-  border-radius: 50%;
-}
-.user-info-card__image{
-  width: 75px;
-  height: 75px;
-  border-radius: 50%;
-}
-.user-info-card__name{
-  padding-right: 20px;
-  padding-bottom: 5px;
-}
-.user-info-card__content{
-  padding-top: 10px;
-  padding-left: 20px;
-  width: 100%;
-}
-.user-info-card__content header{
-  display: flex;
-  justify-content: space-between;
-}
-.user-info-card__content button{
-  background-color: white;
-  color: black;
-  max-height: 45px;
-}
-.error-message {
-  color: red;
-  font-weight: bold;
-}
-.User_and_repositaries{
-  display: flex;
-  flex-direction: column;
-} */
+
 
 .user-info-card {
   display: flex;
@@ -119,4 +73,25 @@
   border-radius: 5px; /* Optional: Add border-radius */
   padding: 10px; /* Add padding */
   /* background-color: #f9f9f9; Optional: Add background color */
+  /* i need transition */
+
+
+}
+
+.spinner {
+  border: 4px solid rgba(0, 0, 0, 0.1);
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  border-left-color: #09f;
+  animation: spin 1s ease infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }

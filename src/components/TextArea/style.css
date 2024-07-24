@@ -17,6 +17,15 @@
 
 .search-bar {
   display: flex;
+
+}
+.search-bar button {
+  background-color: #A09898;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  margin-left: 10px;
 }
 
 .search-bar input {
@@ -36,4 +45,11 @@
   padding-bottom:5px;
   padding-top: 5px;
   margin-top: 10px;
+}
+.repo_data{
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  align-items: center;
+  padding-left: 15px;
 }

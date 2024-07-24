@@ -11,13 +11,13 @@ function Repos() {
       <div className="repositories-list">
         {
           repos.map((e) => (
-            <div className="card" key={e.id}>
+            <div className="card_repos" key={e.id}>
               <div className="card__image-container">
                 <img src={e.owner
-                  .avatar_url} alt='img' className="card__image" />
+                  .avatar_url} alt='img' className="card__repo_image" />
               </div>
               <div className="card__content">
-                <h4 className="card__name">{e.name}</h4>
+                <h4 className="card__repo_name">{e.name}</h4>
               </div>
             </div>
           ))
